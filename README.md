@@ -9,10 +9,17 @@
 ---
 
 ## 📕 Table of Contents
-- 📂 Dataset  
-- 🔎 Data Dictionary  
-- 🧙‍♂️ Business Questions and Solutions  
-- 🚀 Key Insights and Recommendations  
+- [📂 Dataset](#-dataset)
+- [🔎 Data Dictionary](#-data-dictionary)
+- [🧙‍♂️ Business Questions and Solutions](#-business-questions-and-solutions)
+  - [✅ Question 1](#-question-1)
+  - [✅ Question 2](#-question-2)
+  - [✅ Question 3](#-question-3)
+  - [✅ Question 4](#-question-4)
+  - [✅ Question 5](#-question-5)
+  - [✅ Question 6](#-question-6)
+  - [✅ Question 7](#-question-7)
+- [🚀 Key Insights and Recommendations](#-key-insights-and-recommendations)
 
 ---
 
