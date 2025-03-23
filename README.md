@@ -11,7 +11,7 @@
 ## 📕 Table of Contents
 - [📂 Dataset](#-dataset)
 - [🔎 Data Dictionary](#-data-dictionary)
-- [🧙‍♂️ Business Questions and Solutions](#-business-questions-and-solutions)
+- [🧙‍♂️ Business Questions and Solutions](#🧙‍♂️-business-questions-and-solutions)
 - [🚀 Key Insights and Recommendations](#-key-insights-and-recommendations)
 
 ---
