@@ -11,7 +11,7 @@
 ## 📕 Table of Contents
 - [📂 Dataset](#-dataset)
 - [🔎 Data Dictionary](#-data-dictionary)
-- [🧙‍♂️ Business Questions and Solutions](#-question-1)
+- [🧙‍♂️ Business Questions and Solutions](#-business-questions-and-solutions)
 - [🚀 Key Insights and Recommendations](#-key-insights-and-recommendations)
 
 ---
@@ -24,11 +24,211 @@ The dataset consists of 14 tables, including Customers, Orders, Products, and Em
 ---
 
 ## 🔎 Data Dictionary
-- **Customers Table:** Customer information (e.g., `CustomerID`, `CompanyName`, `ContactName`).  
-- **Orders Table:** Order details (e.g., `OrderID`, `CustomerID`, `OrderDate`).  
-- **Products Table:** Product information (e.g., `ProductID`, `ProductName`, `UnitPrice`).  
-- **Employees Table:** Employee details (e.g., `EmployeeID`, `FirstName`, `LastName`).  
-- **OrderDetails Table:** Line items for each order (e.g., `OrderID`, `ProductID`, `Quantity`).  
+
+The Northwind Traders database consists of **14 tables**, each containing specific information about the company's operations. Below is a detailed breakdown of the tables and their columns:
+
+---
+
+<details>
+<summary>📂 Categories</summary>
+
+Stores information about product categories.
+- **category_id** (Primary Key): Unique identifier for each category.
+- **category_name**: Name of the category.
+- **description**: Description of the category.
+- **picture**: Image representing the category.
+</details>
+
+
+
+<details>
+<summary>📂 Products</summary>
+
+Contains details about the products sold by Northwind Traders.
+- **product_id** (Primary Key): Unique identifier for each product.
+- **product_name**: Name of the product.
+- **supplier_id** (Foreign Key): Links to the `suppliers` table.
+- **category_id** (Foreign Key): Links to the `categories` table.
+- **quantity_per_unit**: Quantity of the product per unit (e.g., "24 boxes").
+- **unit_price**: Price per unit of the product.
+- **units_in_stock**: Number of units currently in stock.
+- **units_on_order**: Number of units on order.
+- **reorder_level**: Minimum stock level before reordering.
+- **discontinued**: Indicates whether the product is discontinued (1 = Yes, 0 = No).
+</details>
+
+
+
+<details>
+<summary>📂 Suppliers</summary>
+
+Stores information about suppliers.
+- **supplier_id** (Primary Key): Unique identifier for each supplier.
+- **company_name**: Name of the supplier company.
+- **contact_name**: Name of the contact person.
+- **contact_title**: Title of the contact person.
+- **address**: Address of the supplier.
+- **city**: City where the supplier is located.
+- **region**: Region or state where the supplier is located.
+- **postal_code**: Postal code of the supplier.
+- **country**: Country where the supplier is located.
+- **phone**: Phone number of the supplier.
+- **fax**: Fax number of the supplier.
+- **homepage**: Website of the supplier.
+</details>
+
+
+
+<details>
+<summary>📂 Employees</summary>
+
+Contains information about employees.
+- **employee_id** (Primary Key): Unique identifier for each employee.
+- **last_name**: Last name of the employee.
+- **first_name**: First name of the employee.
+- **title**: Job title of the employee.
+- **title_of_courtesy**: Courtesy title (e.g., Mr., Ms.).
+- **birth_date**: Birth date of the employee.
+- **hire_date**: Date the employee was hired.
+- **address**: Address of the employee.
+- **city**: City where the employee resides.
+- **region**: Region or state where the employee resides.
+- **postal_code**: Postal code of the employee.
+- **country**: Country where the employee resides.
+- **home_phone**: Home phone number of the employee.
+- **extension**: Office extension of the employee.
+- **photo**: Photo of the employee.
+- **notes**: Additional notes about the employee.
+- **reports_to** (Foreign Key): Links to the `employees` table (manager of the employee).
+- **photo_path**: Path to the employee's photo.
+</details>
+
+
+
+<details>
+<summary>📂 Order Details</summary>
+
+Stores details about each order.
+- **order_id** (Foreign Key): Links to the `orders` table.
+- **product_id** (Foreign Key): Links to the `products` table.
+- **unit_price**: Price per unit of the product at the time of the order.
+- **quantity**: Quantity of the product ordered.
+- **discount**: Discount applied to the product.
+</details>
+
+
+
+<details>
+<summary>📂 Customers</summary>
+
+Contains information about customers.
+- **customer_id** (Primary Key): Unique identifier for each customer.
+- **company_name**: Name of the customer company.
+- **contact_name**: Name of the contact person.
+- **contact_title**: Title of the contact person.
+- **address**: Address of the customer.
+- **city**: City where the customer is located.
+- **region**: Region or state where the customer is located.
+- **postal_code**: Postal code of the customer.
+- **country**: Country where the customer is located.
+- **phone**: Phone number of the customer.
+- **fax**: Fax number of the customer.
+</details>
+
+
+
+<details>
+<summary>📂 Orders</summary>
+
+Stores information about orders placed by customers.
+- **order_id** (Primary Key): Unique identifier for each order.
+- **customer_id** (Foreign Key): Links to the `customers` table.
+- **employee_id** (Foreign Key): Links to the `employees` table.
+- **order_date**: Date the order was placed.
+- **required_date**: Date the order is required.
+- **shipped_date**: Date the order was shipped.
+- **ship_via** (Foreign Key): Links to the `shippers` table.
+- **freight_name**: Name of the freight company.
+- **ship_address**: Shipping address.
+- **ship_city**: City where the order is shipped.
+- **ship_region**: Region or state where the order is shipped.
+- **ship_postal_code**: Postal code of the shipping address.
+- **ship_country**: Country where the order is shipped.
+</details>
+
+
+
+<details>
+<summary>📂 Shippers</summary>
+
+Stores information about shipping companies.
+- **shipper_id** (Primary Key): Unique identifier for each shipper.
+- **company_name**: Name of the shipping company.
+- **phone**: Phone number of the shipping company.
+</details>
+
+
+
+<details>
+<summary>📂 Customer Demographics</summary>
+
+Stores demographic information about customers.
+- **customer_type_id** (Primary Key): Unique identifier for each customer type.
+- **customer_desc**: Description of the customer demographic.
+</details>
+
+
+
+<details>
+<summary>📂 Customer Customer Demo</summary>
+
+Links customers to their demographic information.
+- **customer_id** (Foreign Key): Links to the `customers` table.
+- **customer_type_id** (Foreign Key): Links to the `customer_demographics` table.
+</details>
+
+
+
+<details>
+<summary>📂 Employee Territories</summary>
+
+Links employees to their assigned territories.
+- **employee_id** (Foreign Key): Links to the `employees` table.
+- **territory_id** (Foreign Key): Links to the `territories` table.
+</details>
+
+
+
+<details>
+<summary>📂 Territories</summary>
+
+Stores information about sales territories.
+- **territory_id** (Primary Key): Unique identifier for each territory.
+- **territory_description**: Description of the territory.
+- **region_id** (Foreign Key): Links to the `region` table.
+</details>
+
+
+
+<details>
+<summary>📂 Region</summary>
+
+Stores information about regions.
+- **region_id** (Primary Key): Unique identifier for each region.
+- **region_description**: Description of the region.
+</details>
+
+
+
+<details>
+<summary>📂 US States</summary>
+
+Contains information about U.S. states.
+- **us_state_id** (Primary Key): Unique identifier for each state.
+- **us_state_name**: Name of the state.
+- **state_abbr**: Abbreviation of the state.
+- **state_region**: Region of the state.
+</details>
 
 ---
 
