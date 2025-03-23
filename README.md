@@ -30,7 +30,7 @@ The Northwind Traders database consists of **14 tables**, each containing specif
 ---
 
 <details>
-<summary>📂 Categories</summary>
+<summary>Categories</summary>
 
 Stores information about product categories.
 - **category_id** (Primary Key): Unique identifier for each category.
@@ -42,7 +42,7 @@ Stores information about product categories.
 
 
 <details>
-<summary>📂 Products</summary>
+<summary>Products</summary>
 
 Contains details about the products sold by Northwind Traders.
 - **product_id** (Primary Key): Unique identifier for each product.
@@ -60,7 +60,7 @@ Contains details about the products sold by Northwind Traders.
 
 
 <details>
-<summary>📂 Suppliers</summary>
+<summary>Suppliers</summary>
 
 Stores information about suppliers.
 - **supplier_id** (Primary Key): Unique identifier for each supplier.
@@ -80,7 +80,7 @@ Stores information about suppliers.
 
 
 <details>
-<summary>📂 Employees</summary>
+<summary>Employees</summary>
 
 Contains information about employees.
 - **employee_id** (Primary Key): Unique identifier for each employee.
@@ -106,7 +106,7 @@ Contains information about employees.
 
 
 <details>
-<summary>📂 Order Details</summary>
+<summary>Order Details</summary>
 
 Stores details about each order.
 - **order_id** (Foreign Key): Links to the `orders` table.
@@ -119,7 +119,7 @@ Stores details about each order.
 
 
 <details>
-<summary>📂 Customers</summary>
+<summary>Customers</summary>
 
 Contains information about customers.
 - **customer_id** (Primary Key): Unique identifier for each customer.
@@ -138,7 +138,7 @@ Contains information about customers.
 
 
 <details>
-<summary>📂 Orders</summary>
+<summary>Orders</summary>
 
 Stores information about orders placed by customers.
 - **order_id** (Primary Key): Unique identifier for each order.
@@ -159,7 +159,7 @@ Stores information about orders placed by customers.
 
 
 <details>
-<summary>📂 Shippers</summary>
+<summary>Shippers</summary>
 
 Stores information about shipping companies.
 - **shipper_id** (Primary Key): Unique identifier for each shipper.
@@ -170,7 +170,7 @@ Stores information about shipping companies.
 
 
 <details>
-<summary>📂 Customer Demographics</summary>
+<summary>Customer Demographics</summary>
 
 Stores demographic information about customers.
 - **customer_type_id** (Primary Key): Unique identifier for each customer type.
@@ -180,7 +180,7 @@ Stores demographic information about customers.
 
 
 <details>
-<summary>📂 Customer Customer Demo</summary>
+<summary>Customer Customer Demo</summary>
 
 Links customers to their demographic information.
 - **customer_id** (Foreign Key): Links to the `customers` table.
@@ -190,7 +190,7 @@ Links customers to their demographic information.
 
 
 <details>
-<summary>📂 Employee Territories</summary>
+<summary>Employee Territories</summary>
 
 Links employees to their assigned territories.
 - **employee_id** (Foreign Key): Links to the `employees` table.
@@ -200,7 +200,7 @@ Links employees to their assigned territories.
 
 
 <details>
-<summary>📂 Territories</summary>
+<summary>Territories</summary>
 
 Stores information about sales territories.
 - **territory_id** (Primary Key): Unique identifier for each territory.
@@ -211,7 +211,7 @@ Stores information about sales territories.
 
 
 <details>
-<summary>📂 Region</summary>
+<summary>Region</summary>
 
 Stores information about regions.
 - **region_id** (Primary Key): Unique identifier for each region.
@@ -221,7 +221,7 @@ Stores information about regions.
 
 
 <details>
-<summary>📂 US States</summary>
+<summary>US States</summary>
 
 Contains information about U.S. states.
 - **us_state_id** (Primary Key): Unique identifier for each state.
