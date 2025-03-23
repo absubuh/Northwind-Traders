@@ -1,7 +1,10 @@
-# Northwind Traders: Data-Driven Insights for Business Growth
+# **Northwind Company Analysis**
 
-## Project Overview
-The Northwind Traders database contains sales data for a fictitious company that imports and exports specialty foods worldwide. My task was to analyze this data using **SQL** and **Excel** to uncover actionable insights that drive business growth, optimize pricing, and improve customer retention.
+> The Northwind database contains the sales data for a fictitious company called Northwind Traders, which imports and exports specialty foods from around the world.
+> 
+> 
+> 👉 **My task in this case study is to perform an analysis of the performance of this company using SQL.**
+>
 
 ---
 
