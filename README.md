@@ -17,7 +17,7 @@ The Northwind Traders database contains sales data for a fictitious company that
 ## 📂 Dataset
 The dataset consists of 13 tables, including Customers, Orders, Products, and Employees. Below is the Entity Relationship Diagram (ERD) for the Northwind Traders database:
 
-![ERD Diagram](ERD (1).png)
+<img width="620" alt="Image" src="https://github.com/user-attachments/assets/a46e4f78-5095-434e-9b96-beaff12a7930" />
 
 ---
 
