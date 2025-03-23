@@ -11,7 +11,7 @@
 ## 📕 Table of Contents
 - [📂 Dataset](#-dataset)
 - [🔎 Data Dictionary](#-data-dictionary)
-- [🧙‍♂️ Business Questions and Solutions](#🧙‍♂️-business-questions-and-solutions)
+- [Business Questions and Solutions](#business-questions-and-solutions)
 - [🚀 Key Insights and Recommendations](#-key-insights-and-recommendations)
 
 ---
@@ -232,7 +232,7 @@ Contains information about U.S. states.
 
 ---
 
-## 🧙‍♂️ Business Questions and Solutions
+## Business Questions and Solutions
 
 ### ✅ Question 1
 **Business Problem:** For their annual review of the company pricing strategy, the Product Team wants to look at the products that are currently being offered for a specific price range ($20 to $50). In order to help them, they asked you to provide them with a list of products with the following information:  
