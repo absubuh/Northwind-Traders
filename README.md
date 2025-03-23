@@ -1,14 +1,48 @@
+# Northwind Traders: Data-Driven Insights for Business Growth
 
-About My Northwind Traders Project
+## Project Overview
+The Northwind Traders database contains sales data for a fictitious company that imports and exports specialty foods worldwide. My task was to analyze this data using **SQL** and **Excel** to uncover actionable insights that drive business growth, optimize pricing, and improve customer retention.
 
-My Northwind Traders Project is a comprehensive data analysis project that I completed, consisting of four main parts: SQL I, SQL II, Excel I, and Excel II. Each part focuses on different aspects of data analysis and presentation.
+---
 
-In SQL I, I queried the Northwind database to extract valuable insights, such as customer information, order details, and sales data, to gain a better understanding of the company's operations.
+## 📕 Table of Contents
+- 📂 Dataset  
+- 🔎 Data Dictionary  
+- 🧙‍♂️ Business Questions and Solutions  
+- 📊 Visuals and Outputs  
+- 🚀 Key Insights and Recommendations  
 
-SQL II expanded on the SQL queries, diving deeper into customer analysis, product sales, and revenue trends to provide a more detailed overview of Northwind's business performance.
+---
 
-For Excel I, I delved into data visualization and analysis using Excel, presenting information on sales distribution across different countries, top-selling product categories, and customer spending patterns.
+## 📂 Dataset
+The dataset consists of 13 tables, including Customers, Orders, Products, and Employees. Below is the Entity Relationship Diagram (ERD) for the Northwind Traders database:
 
-In Excel II, I concluded the project with advanced Excel analysis, including price and quantity optimization scenarios, profitability analysis for different product categories, and recommendations for maximizing total revenue.
+![ERD Diagram](img/ERD.png)
 
-Overall, my Northwind Traders Project showcases my proficiency in SQL querying, data analysis, and presentation skills using Excel. It provides valuable insights and recommendations for business decision-making based on the analysis of Northwind's data.
+---
+
+## 🔎 Data Dictionary
+- **Customers Table:** Customer information (e.g., `CustomerID`, `CompanyName`, `ContactName`).  
+- **Orders Table:** Order details (e.g., `OrderID`, `CustomerID`, `OrderDate`).  
+- **Products Table:** Product information (e.g., `ProductID`, `ProductName`, `UnitPrice`).  
+- **Employees Table:** Employee details (e.g., `EmployeeID`, `FirstName`, `LastName`).  
+- **OrderDetails Table:** Line items for each order (e.g., `OrderID`, `ProductID`, `Quantity`).  
+
+---
+
+## 🧙‍♂️ Business Questions and Solutions
+
+### ✅ Question 1: Identifying High-Value Customers
+**Business Problem:** The Sales Team wants to identify high-value customers to target for loyalty programs.  
+**Solution:** I analyzed customer purchase history to identify the top 10 customers contributing 30% of total revenue.  
+**SQL Query:**  
+```sql
+SELECT 
+    CustomerID, 
+    CompanyName, 
+    SUM(UnitPrice * Quantity) AS TotalSpent
+FROM Orders
+JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
+GROUP BY CustomerID, CompanyName
+ORDER BY TotalSpent DESC
+LIMIT 10;
