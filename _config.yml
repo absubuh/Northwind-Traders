@@ -1,4 +1,4 @@
 #logo:
 #description
 show_downloads: false
-remote_theme: "jekyll/minima@1e8a445"
+remote_theme: pages-themes/hacker@v0.2.0
