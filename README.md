@@ -609,11 +609,11 @@ ORDER BY
 
 ### Key Insights
 
-- **Premium Product Performance**: Analysis reveals products priced between $20-$50 (like Tarte au sucre at $49.30 and Ipoh Coffee at $46.00) account for 38% of total revenue while maintaining the lowest discontinuation rates (under 2%).
+- Analysis reveals products priced between $20-$50 (like Tarte au sucre at $49.30 and Ipoh Coffee at $46.00) account for 38% of total revenue while maintaining the lowest discontinuation rates (under 2%).
 
-- **Logistics Bottlenecks**: Brazil (8.12 days), France (9.43 days), and Venezuela (8.73 days) show shipping delays 65% higher than the company average, correlating with 18% lower customer retention in these markets.
+- Brazil (8.12 days), France (9.43 days), and Venezuela (8.73 days) show shipping delays 65% higher than the company average, correlating with 18% lower customer retention in these markets.
 
-- **Early-Career Advantage**: Sales representatives hired before age 30 (e.g., Nancy Davolio, Anne Dodsworth) achieve 23% higher quarterly sales averages and complete training 40% faster than later-career hires.
+- Sales representatives hired before age 30 (e.g., Nancy Davolio, Anne Dodsworth) achieve 23% higher quarterly sales averages and complete training 40% faster than later-career hires.
 
 ### Business Recommendations
 
@@ -621,4 +621,4 @@ ORDER BY
 
 - **Speed up problem shipments**: Open local distribution centers in slow-delivery regions, use forecasting tools to prevent bottlenecks, and offer guaranteed faster delivery to loyal customers.
 
-- **Grow our talent pipeline**: Recruit from top business schools, launch a hands-on sales training program, and pair new hires with experienced mentors for guidance.
+- **Hire ealry talent**: Recruit from top business schools, launch a hands-on sales training program, and pair new hires with experienced mentors for guidance.
