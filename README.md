@@ -620,7 +620,7 @@ ORDER BY
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
     
 | category_name   | supplier_region | units_in_stock | units_on_order | reorder_level |
 |-----------------|-----------------|----------------|----------------|---------------|
