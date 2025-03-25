@@ -3,27 +3,27 @@
 > The Northwind database contains the sales data for a fictitious company called Northwind Traders, which imports and exports specialty foods from around the world.
 > 
 > 
-> 👉 **My task in this case study is to perform an analysis of the performance of this company using SQL.**
+> **My task in this case study is to perform an analysis of the performance of this company using SQL.**
 >
 
 ---
 
-## 📕 Table of Contents
-- [📂 Dataset](#-dataset)
-- [🔎 Data Dictionary](#-data-dictionary)
-- [📋 Business Questions and Solutions](#-business-questions-and-solutions)
-- [🚀 Key Insights and Recommendations](#-key-insights-and-recommendations)
+## Table of Contents
+- [Dataset](#dataset)
+- [Data Dictionary](#data-dictionary)
+- [Business Questions and Solutions](#business-questions-and-solutions)
+- [Key Insights and Recommendations](#key-insights-and-recommendations)
 
 ---
 
-## 📂 Dataset
+## Dataset
 The dataset consists of 14 tables, including Customers, Orders, Products, and Employees. Below is the Entity Relationship Diagram (ERD) for the Northwind Traders database:
 
 <img width="620" alt="Image" src="https://github.com/user-attachments/assets/a46e4f78-5095-434e-9b96-beaff12a7930" />
 
 ---
 
-## 🔎 Data Dictionary
+## Data Dictionary
 
 The Northwind Traders database consists of **14 tables**, each containing specific information about the company's operations. Below is a detailed breakdown of the tables and their columns:
 
@@ -232,9 +232,9 @@ Contains information about U.S. states.
 
 ---
 
-## 📋 Business Questions and Solutions
+## Business Questions and Solutions
 
-### ✅ Question 1
+### Question 1
 **Business Problem:** For their annual review of the company pricing strategy, the Product Team wants to look at the products that are currently being offered for a specific price range ($20 to $50). In order to help them, they asked you to provide them with a list of products with the following information:  
 - Their name  
 - Their unit price  
@@ -246,7 +246,7 @@ Contains information about U.S. states.
 **Finally, order the results by unit price in a descending order (highest first).** 
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 -- Solution Query
@@ -261,7 +261,7 @@ ORDER BY unit_price DESC;
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
     
 | product_name                          | unit_price |
 |---------------------------------------|------------|
@@ -294,7 +294,7 @@ ORDER BY unit_price DESC;
 | Maxilaku                              | 20         |
 </details>
 
-### ✅ Question 2: Logistics Performance in 1998
+### Question 2: Logistics Performance in 1998
 **Business Problem:** The Logistics Team wants to do a retrospection of their performances for the year 1998, in order to identify for which countries they didn’t perform well. They asked you to provide them a list of countries with the following information:  
 - Their average days between the order date and the shipping date (formatted to have only 2 decimals).  
 - Their total number of orders (based on the order date).  
@@ -307,7 +307,7 @@ ORDER BY unit_price DESC;
 **Finally, order the results by country name in ascending order (lowest first).**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 -- Solution Query
@@ -332,7 +332,7 @@ AND total_number_orders > 10;
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
 
 | ShipCountry   | AvgShippingDelay | TotalOrders |
 |--------------|------------------|-------------|
@@ -348,7 +348,7 @@ AND total_number_orders > 10;
 
 </details>
 
-### ✅ Question 3: Employee Age and Manager Information
+### Question 3: Employee Age and Manager Information
 **Business Problem:** The HR Team wants to know for each employee what was their age on the date they joined the company and who they currently report to. Provide them with a list of every employee with the following information:  
 - Their full name (first name and last name combined in a single field).  
 - Their job title.  
@@ -359,7 +359,7 @@ AND total_number_orders > 10;
 **Finally, order the results by employee age and employee full name in ascending order (lowest first).**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 -- Solution Query
@@ -380,7 +380,7 @@ ORDER BY
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
 
 | employee_full_name   | employee_title           | employee_age | manager_full_name   | manager_title           |
 |----------------------|--------------------------|--------------|---------------------|-------------------------|
@@ -395,7 +395,7 @@ ORDER BY
 
 </details>
 
-### ✅ Question 4: Global Logistics Performance (1997-1998)
+### Question 4: Global Logistics Performance (1997-1998)
 **Business Problem:** The Logistics Team wants to do a retrospection of their global performances over 1997-1998, in order to identify for which month they perform well. They asked you to provide them a list with:  
 - Their year/month as a single field in a date format (e.g., “1996-01-01” for January 1996).  
 - Their total number of orders.  
@@ -408,7 +408,7 @@ ORDER BY
 **Finally, order the results by total freight in descending order.**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 -- Solution Query
@@ -439,7 +439,7 @@ ORDER BY total_freight DESC;
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
 
 | year_month   | total_number_orders | total_freight |
 |--------------|---------------------|---------------|
@@ -453,7 +453,7 @@ ORDER BY total_freight DESC;
 
 </details>
 
-### ✅ Question 5: Products with Price Increases Outside 20-30%
+### Question 5: Products with Price Increases Outside 20-30%
 **Business Problem:** The Pricing Team wants to know which products had a unit price increase, and the percentage increase was not between 20% and 30%. They asked you to provide them with a list of products with the following information:  
 - Their product name.  
 - Their current unit price (formatted to have only 2 decimals).  
@@ -468,7 +468,7 @@ ORDER BY total_freight DESC;
 **Finally, order the results by percentage increase in ascending order.**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 -- Solution Query
@@ -503,7 +503,7 @@ AND ROUND(100*(c.current_price - c.previous_unit_price)/c.previous_unit_price) N
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
     
 | product_name                  | current_price | previous_unit_price | percentage_increase |
 |-------------------------------|---------------|---------------------|---------------------|
@@ -512,7 +512,7 @@ AND ROUND(100*(c.current_price - c.previous_unit_price)/c.previous_unit_price) N
 
 </details>
 
-### ✅ Question 6: Category Performance by Price Range
+### Question 6: Category Performance by Price Range
 **Business Problem:** The Pricing Team wants to know how each category performs according to their price range. In order to help them, they asked you to provide them a list of categories with:  
 - Their category name  
 - Their price range as:  
@@ -525,7 +525,7 @@ AND ROUND(100*(c.current_price - c.previous_unit_price)/c.previous_unit_price) N
 **Finally, order the results by category name then price range (both ascending order).**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 --Solution query
@@ -553,7 +553,7 @@ ORDER BY
 </details>
 
 <details>
-<summary>📊 Output</summary>
+<summary>Output</summary>
     
 | category_name   | price_range    | total_amount | total_number_orders |
 |-----------------|----------------|--------------|---------------------|
@@ -581,7 +581,7 @@ ORDER BY
 | Seafood         | 3. Over $50    | 31988        | 27                  |
 </details>
 
-### ✅ Question 7: Regional Supplier Stock Analysis
+### Question 7: Regional Supplier Stock Analysis
 **Business Problem:** The Logistics Team wants to know what is the current state of our regional suppliers' stocks for each category of product. In order to help them, they asked you to provide them a list of categories with:  
 - Their supplier region (as "America," "Europe," or "Asia-Pacific")  
 - Their category name  
@@ -592,7 +592,7 @@ ORDER BY
 **Finally, order the results by supplier region, then category name, then price range (each in ascending order).**  
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```sql
 --Solution query
@@ -652,7 +652,7 @@ ORDER BY
 | Seafood         | Europe          | 123            | 0              | 30            |
 </details>
 
-## 🚀 Key Insights and Recommendations
+## Key Insights and Recommendations
 
 ### Key Insights
 1. **Pricing Strategy (Question 1):** Products priced between $20 and $50, such as "Tarte au sucre" and "Ipoh Coffee," have the highest unit prices and are not discontinued, making them ideal for maximizing revenue.
