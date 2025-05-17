@@ -11,7 +11,7 @@
 	Finally, order the results by unit price in a descending order (highest first).
 */
 
-#SELECT
+SELECT
 	product_name,
 	unit_price
 FROM products
@@ -31,7 +31,7 @@ ORDER BY unit_price DESC;
     Finally, order the results by country name in an ascending order (lowest first).
 */
 
-#WITH cte_avg_days AS (
+WITH cte_avg_days AS (
 	SELECT
 		ship_country,
 		ROUND(AVG(
@@ -60,7 +60,7 @@ AND total_number_orders > 10;
 	Finally, order the results by employee age and employee full name in an ascending order (lowest first).
 */
 
-#SELECT
+SELECT
     CONCAT(e.first_name, ' ', e.last_name) AS employee_full_name,
 	e.title AS employee_title,
 	EXTRACT(YEAR FROM AGE(e.hire_date, e.birth_date)) AS employee_age,
@@ -86,7 +86,7 @@ ORDER BY
     Finally, order the results by total freight (descending order).
 */
 
-#WITH cte_freight AS (
+WITH cte_freight AS (
 	SELECT
 		CONCAT(EXTRACT(YEAR FROM order_date), 
 			   '-', 
@@ -124,7 +124,7 @@ ORDER BY total_freight DESC;
     Finally, order the results by percentage increase (ascending order).
 */
 
-#WITH cte_price AS (
+WITH cte_price AS (
 	SELECT
 		d.product_id,
 		p.product_name,
@@ -165,7 +165,7 @@ AND ROUND(100*(c.current_price - c.previous_unit_price)/c.previous_unit_price) N
     Finally, order the results by category name then price range (both ascending order).
 */
 
-#SELECT
+SELECT
 	c.category_name,
 	CASE 
 		WHEN p.unit_price < 20 THEN '1. Below $20'
@@ -197,7 +197,7 @@ ORDER BY
     Finally, order the results by supplier region, then category name, then price range (each in ascending order).
 */
 
-#SELECT 
+SELECT 
     CASE 
         WHEN Country IN ('USA', 'Canada', 'Mexico') THEN 'America'
         WHEN Country IN ('Germany', 'France', 'UK') THEN 'Europe'
