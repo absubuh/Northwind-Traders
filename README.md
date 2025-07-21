@@ -245,8 +245,7 @@ Contains information about U.S. states.
 
 **Finally, order the results by unit price in a descending order (highest first).** 
 
-<details>
-<summary>Solution</summary>
+### Solution
 
 ```sql
 -- Solution Query
@@ -258,7 +257,7 @@ WHERE unit_price BETWEEN 20 AND 50
 AND discontinued = 0
 ORDER BY unit_price DESC;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
@@ -308,8 +307,7 @@ ORDER BY unit_price DESC;
 
 **Finally, order the results by country name in ascending order (lowest first).**  
 
-<details>
-<summary>Solution</summary>
+### Solution
 
 ```sql
 -- Solution Query
@@ -331,7 +329,7 @@ SELECT * FROM cte_avg_days
 WHERE average_days_between_order_shipping >= 5
 AND total_number_orders > 10;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
@@ -362,8 +360,8 @@ AND total_number_orders > 10;
 
 **Finally, order the results by employee age and employee full name in ascending order (lowest first).**  
 
-<details>
-<summary>Solution</summary>
+
+### Solution
 
 ```sql
 -- Solution Query
@@ -381,7 +379,7 @@ ORDER BY
     employee_age,
 	employee_full_name;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
@@ -413,8 +411,7 @@ ORDER BY
 
 **Finally, order the results by total freight in descending order.**  
 
-<details>
-<summary>Solution</summary>
+### Solution
 
 ```sql
 -- Solution Query
@@ -442,7 +439,7 @@ SELECT * FROM cte_freight
 WHERE total_number_orders > 35
 ORDER BY total_freight DESC;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
@@ -473,8 +470,7 @@ ORDER BY total_freight DESC;
 
 **Finally, order the results by category name then price range (both ascending order).**  
 
-<details>
-<summary>Solution</summary>
+### Solution
 
 ```sql
 --Solution query
@@ -499,7 +495,7 @@ ORDER BY
 	c.category_name,
 	price_range;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
@@ -542,8 +538,7 @@ ORDER BY
 
 **Finally, order the results by supplier region, then category name, then price range (each in ascending order).**  
 
-<details>
-<summary>Solution</summary>
+### Solution
 
 ```sql
 --Solution query
@@ -568,7 +563,7 @@ ORDER BY
 	c.category_name,
 	p.unit_price;
 ```
-</details>
+
 
 <details>
 <summary>Output</summary>
