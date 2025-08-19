@@ -1,0 +1,48 @@
+---
+---
+
+/* Responsive wrapper for wide tables */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+}
+
+/* Base table styling (dark) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #1e1e1e;      /* dark bg */
+  color: #e6e6e6;
+  font-size: 0.95rem;
+}
+
+/* Borders & padding */
+th, td {
+  border: 1px solid #3a3a3a;
+  padding: 0.55rem 0.75rem;
+  vertical-align: top;
+}
+
+/* Header row */
+th {
+  background: #252526;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(odd) {
+  background: #202224;
+}
+
+/* Tables in <details> */
+details table { margin-top: 0.5rem; }
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  table { font-size: 0.92rem; }
+  th, td { padding: 0.5rem; }
+}
