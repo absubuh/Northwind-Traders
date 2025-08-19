@@ -1,3 +1,4 @@
+## Project Overview
 *The Northwind database contains the sales data for a fictitious company called Northwind Traders, which imports and exports specialty foods from around the world.*
 
  **My task in this case study is to perform an analysis of the performance of this company using SQL.**
