@@ -4,4 +4,9 @@ remote_theme: pages-themes/slate@v0.2.0   # darker than minimal
 plugins:
   - jekyll-remote-theme
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 highlighter: rouge
+
+
