@@ -1,5 +1,5 @@
 title: Northwind Company Analysis
-description: SQL, data modeling, and BI case study by Abdullah Subuh
+description: By Abdullah Subuh
 remote_theme: pages-themes/slate@v0.2.0   # darker than minimal
 plugins:
   - jekyll-remote-theme
