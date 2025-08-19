@@ -1,9 +1,7 @@
-remote_theme: pages-themes/hacker@v0.2.0
+title: Northwind Company Analysis
+description: SQL, data modeling, and BI case study by Abdullah Subuh
+remote_theme: pages-themes/cayman@v0.2.0   # or pages-themes/minimal@v0.2.0, pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme
-
-# Optional configuration variables
-# title: "Your Site Title"
-# description: "A brief description of your site"
-show_downloads: false  # Set to true if you want download links
-# google_analytics: "UA-XXXXX-Y"  # Uncomment and add your GA tracking ID
+markdown: kramdown
+highlighter: rouge
